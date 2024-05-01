@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul> -->
+
+    <script>
+        //append child (Create an element with the help of JS)
+        let a = document.createElement("h1");
+        a.className = "title";
+        a.style.fontSize = "24px";
+        a.textContent = "Ramayana is our holy books";
+        // console.log(a)
+        // document.body.appendChild(a)
+
+        //remove child (Remove an element with the help of JS)
+        let remove = document.querySelector("ul");
+        // console.log(remove);
+        let lists = document.querySelectorAll("li");
+        // console.log(lists);
+        // for (list of lists) {
+        //     remove.removeChild(list)
+        // }
+
+
+//Demo for self implementation
+
+        let secondElement = document.createElement("p");
+        secondElement.className = "Para";
+        secondElement.textContent = 'Hey, My self Rohit Kumar Tiwari';
+        secondElement.style.fontSize = "20px";
+        console.log(secondElement);
+        document.body.appendChild(secondElement)
+
+
+    </script>
+</body>
+</html>

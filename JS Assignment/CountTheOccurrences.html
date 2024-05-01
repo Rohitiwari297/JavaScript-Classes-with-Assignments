@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "Hello";
+        const strObj = {};
+        const maxKey = '';
+
+        let arr = [...str]
+        console.warn(arr)
+
+        for (let index = 0; index < arr.length; index++) {
+            console.warn(arr[index]);
+
+            if (!strObj[arr[index]]) {
+                strObj[arr[index]] = 0;
+            }
+            strObj[arr[index]]++
+        }
+
+        console.warn(strObj)
+
+    </script>
+</body>
+</html>

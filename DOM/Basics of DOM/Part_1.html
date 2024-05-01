@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 1</title>
+</head>
+<body>
+    <!-- Id selector in DOM -->
+
+    <p id="One">Namaste</p>
+
+    <!-- Class selector in DOM -->
+
+    <p class="classs">One</p>
+    <p class="classs">Two</p>
+    <p class="classs">Three</p>
+
+    <!-- by tag name selector in DOM -->
+
+    <h4>Hey</h4>
+    <h4>Namaste</h4>
+    <h4>Hola</h4>
+
+    <!-- By query selector -->
+
+    <h4>hello</h4>
+    <h4 class="ram">Hola</h4>
+    <h4 id="ids">Hey</h4>
+
+    <script>
+
+        //By ID
+        let Id = document.getElementById("One");
+        console.log(Id.innerText);
+
+        //By Class
+        let classs = document.getElementsByClassName("classs")
+        console.log(classs[2].innerText);
+
+        classs[2].innerText = "Ravan"   //if you want to change to html value using js.
+
+        //By Tag
+        let tags = document.getElementsByTagName("h4");
+        console.log(tags);
+        tags[1].innerText = "Learn with Rohit"
+        tags[1].style.color = "red"
+
+        //BY Query selector
+
+        let querys = document.querySelector(".ram")
+        console.log(querys);
+        
+
+//if you want to change className in JS then-
+        // querys.className = "hello"
+
+//if you want to change classList in JS then-
+        // querys.classList = "ram shyam ghanshayam"
+
+
+// if you want to any attributs in HTML-
+
+        querys.setAttribute("id", "Ramayan") // you can add any type of attributes
+        querys.setAttribute("title", "Ramayan")
+        
+    </script>
+</body>
+</html>

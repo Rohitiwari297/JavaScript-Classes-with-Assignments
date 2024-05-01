@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size:large;
+}
+
+#displayValue{
+    border: solid black;
+    height: auto;
+    width: auto;
+    padding: 5px;
+
+}
+
+#decreament{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    font-weight: 700;
+}
+
+#increament{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    font-weight: 700;
+}
+
+#restValue{
+    display: flex;
+    height: auto;
+    width: 40%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 3%;
+    font-weight: 700;
+}
+
+
+
+
+
